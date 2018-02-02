@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/styles.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Vollkorn">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+    <title>Harry Le</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-text">
+        <h1>Hello, I am <span id="myName">Harry Le</span>. <br>I'm a junior web developer.</h1> 
+        <a id="header-link" href="#about">Explore my site <i id="arrow" class="fa fa-arrow-right"></i></a>
+      </div>
+    </header>
+    
+
+    
+    <div id="navbar">
+      <a id="header-nav" href="#header">Home</a>
+      <a id="about-nav" href="#about">About</a>
+      <a id="porfolio-nav" href="#porfolio">Porfolio</a>
+      <a id="blog-nav" href="#blog">Blog</a>
+      <a id="contact-nav" href="#contact">Contact</a>
+    </div>
+   
+
+    <div id="about" class="container">
+      <h1 class="title">About</h1>
+      <div class="title-line"></div>
+
+      <div class="info">
+        <div class="info-img">
+          <img src="./assets/images/me1.png">
+          <h3>Who's this guy?</h3>
+        </div>
+
+        <div class="info-details">
+        <p id="info-text">I'm an entry-level web developer who is desperately looking for professional practice and experience. I just moved in <span>Melbourne, Australia</span> to start my Information Technology master course in <span>RMIT University</span>.</p>
+          
+          <div class="skill-bar">
+            <div class="skills">HTML</div>
+            <div class="skill-percent html-bar"></div>
+            <div class="skill-name html">80%</div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="skills">CSS</div>
+            <div class="skill-percent css-bar"></div>
+            <div class="skill-name css">70%</div>
+          </div>
+          
+          <div class="skill-bar">
+            <div class="skills">Javascript</div>
+            <div class="skill-percent js-bar"></div>
+            <div class="skill-name javascript">70%</div>
+          </div>
+         
+          <div class="skill-bar">
+            <div class="skills">Nodejs</div>
+            <div class="skill-percent node-bar"></div>
+            <div class="skill-name nodejs">70%</div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="skills">React</div>
+            <div class="skill-percent react-bar"></div>
+            <div class="skill-name react">60%</div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="skills">Angular</div>
+            <div class="skill-percent angular-bar"></div>
+            <div class="skill-name angular">40%</div>
+          </div>
+        </div>
+    </div>
+    
+    <div id="porfolio" class="container">
+      <h1 class="title">Projects</h1>
+      <div class="title-line"></div>
+
+      <div class="tabs">
+        <button class="tablinks" onclick="openProjects('project-all')">All</button>
+        <button class="tablinks" onclick="openProjects('project-js')">Javascript</button>
+        <button class="tablinks" onclick="openProjects('project-node')">Node.js</button>
+        <button class="tablinks" onclick="openProjects('project-react')">React</button>
+      </div>
+
+      <div id="project-all" class="tabcontent">
+        <div class="img-row">
+            <img src="./assets/images/app1.1.jpg" alt="">
+            <img src="./assets/images/app2.1.jpg" alt="">
+            <img src="./assets/images/app3.1.jpg" alt="">
+        </div>
+
+        <div class="img-row">
+          <img src="./assets/images/app4.1.jpg" alt="">
+          <img src="./assets/images/app5.1.jpg" alt="">
+          <img src="./assets/images/app6.1.jpg" alt="">
+        </div>
+      </div>
+
+      <div id="project-js" class="tabcontent">
+        <div class="img-row">
+          <img src="./assets/images/app1.1.jpg" alt="">
+          <img src="./assets/images/app2.1.jpg" alt="">
+        </div>
+      </div>
+
+      <div id="project-node" class="tabcontent">
+        <div class="img-row">
+          <img src="./assets/images/app3.1.jpg" alt="">
+          <img src="./assets/images/app4.1.jpg" alt="">
+        </div>
+      </div>
+
+      <div id="project-react" class="tabcontent">
+        <div class="img-row">
+          <img src="./assets/images/app5.1.jpg" alt="">
+          <img src="./assets/images/app6.1.jpg" alt="">
+        </div>
+      </div>
+
+    </div>
+    
+    <div id="blog" class="container">
+      <h1 class="title">Blog</h1>
+      <div class="title-line"></div>
+    </div>
+
+    <div id="contact" class="container">
+      <h1 class="title title-white">Contact</h1>
+      <div class="title-line title-line-white"></div>
+
+      <h4>Have a question or want to work together?</h4>
+
+      <form action="">
+        <input id="cus-name" type="text" placeholder="Name">
+        <input id="cus-email" type="text" placeholder="Your email">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+        <div class="button-container"><button class="send-button">SEND</button></div>
+      </form>
+    
+    </div>
+
+    <a id="toTop" class="fa fa-angle-double-up" href="#header"></a>
+
+    <footer>
+      <div class="icons">
+        <a href="https://www.facebook.com/cuongle.harry" class="fa fa-facebook" target="_blank"></a>
+        <a href="https://www.instagram.com/harry_ltc/" class="fa fa-instagram" target="_blank"></a>
+        <a href="https://codepen.io/harryle/" class="fa fa-codepen" target="_blank"></a>
+        <a href="https://github.com/ltc2202/" class="fa fa-github" target="_blank"></a>
+      </div>
+      
+      <p>harry le<span> &copy;2018</span></p>
+    
+    </footer>
+  </body>
+</html>
